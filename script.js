@@ -1,6 +1,7 @@
 const input = document.getElementById("fileInput");
 const events = document.querySelector(".main");
 
+
 if (events) {
     let main = JSON.parse(localStorage.getItem("box-content")) || [];
     main.forEach((Event) => {
@@ -46,6 +47,10 @@ document.getElementById("fileInput").addEventListener("change", function (event)
                 video.controls = true;
                 preview.appendChild(video);
             }
+            setTimeout(() => {
+                alert("Preview displayed successfully!");
+            }, 2000);
+            window.location.href = "index.html";
         };
 
         reader.readAsDataURL(file);

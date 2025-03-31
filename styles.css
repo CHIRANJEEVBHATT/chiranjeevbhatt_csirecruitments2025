@@ -81,10 +81,12 @@ body {
 
 .box-img {
     width: 100%;
-    height: 150px;
-    background-size: cover;
+    height: 300px;
+    background-size:contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+
 }
 
 .Create {
